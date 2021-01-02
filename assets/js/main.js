@@ -54,22 +54,22 @@ function scrollActive(){
 
 
 
-// function send(event) {
-//     event.preventDefault();
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "muhammed0safuvan@gmail.com",
-//         Password : "Safuvan@123",
-//         To : 'muhammed0safuvan@gmail.com',
-//         From : document.getElementById('email').value,
-//         Subject : document.getElementById('project').value,
-//         Body : document.getElementById('message').value
-//     }).then(function(response){
-//         if (response == 'OK') {
-//             alert('Success');
-//         } else {
-//             throw new Error("Error: " + response.statusText);
-//         }
-//     }
-//     );
-// }
+function send(event) {
+    event.preventDefault();
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "muhammed0safuvan@gmail.com",
+        Password : "Safuvan@123",
+        To : 'muhammed0safuvan@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : document.getElementById('project').value,
+        Body : document.getElementById('message').value
+    }).then(function(response){
+        if (response == 'OK') {
+            alert('Success');
+        } else {
+            throw new Error("Error: " + response.statusText);
+        }
+    }
+    );
+}
