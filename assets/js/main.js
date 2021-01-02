@@ -57,10 +57,11 @@ function scrollActive(){
 function send(event) {
     event.preventDefault();
     Email.send({
+        SecureToken : "ea238705-4771-4a10-a1af-3400a790f6d7",
         Host : "smtp.gmail.com",
         Username : "muhammed0safuvan@gmail.com",
         Password : "Safuvan@123",
-        To : 'muhammed0safuvan@gmail.com',
+        To : 'muhammed.safuvan@yahoo.com',
         From : document.getElementById('email').value,
         Subject : document.getElementById('project').value,
         Body : document.getElementById('message').value
